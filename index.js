@@ -24,13 +24,13 @@ http
 				res.end("Request couldn't be processed");
 			}
 
-			if (!!json) {
-				res.end(body);
-			} else {
+			if (json && json === 'false') {
 				const cheerio = require('cheerio');
 				const $ = cheerio.load(body);
 				$('head').append(`<base href=${url}>`);
 				res.end($.html());
+			} else {
+				res.end(body);
 			}
 		});
 	})
