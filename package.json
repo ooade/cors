@@ -1,0 +1,19 @@
+{
+	"name": "cors",
+	"version": "0.1.0",
+	"description": "Unblock Cors",
+	"main": "index.js",
+	"repository": {
+		"url": "https://github.com/ooade/cors.git",
+		"type": "git"
+	},
+	"author": "ooade",
+	"license": "MIT",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"cheerio": "^1.0.0-rc.3",
+		"request": "^2.79.0"
+	}
+}
