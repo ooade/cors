@@ -1,19 +1,23 @@
 {
-	"name": "cors",
-	"version": "0.1.0",
-	"description": "Unblock Cors",
-	"main": "index.js",
-	"repository": {
-		"url": "https://github.com/ooade/cors.git",
-		"type": "git"
-	},
-	"author": "ooade",
-	"license": "MIT",
-	"scripts": {
-		"start": "node index.js"
-	},
-	"dependencies": {
-		"cheerio": "^1.0.0-rc.3",
-		"request": "^2.88.2"
-	}
+  "name": "cors",
+  "version": "0.1.0",
+  "description": "Unblock Cors",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/ooade/cors.git",
+    "type": "git"
+  },
+  "author": "ooade",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "request": "^2.88.2",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
